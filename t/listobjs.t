@@ -39,6 +39,7 @@ isa_ok $foo->hash,  'List::Objects::WithUtils::Hash';
 isa_ok $foo->immarray, 'List::Objects::WithUtils::Array::Immutable';
 
 # Types.
+# FIXME these tests mostly folded into List::Objects::Types
 ok $foo->string eq 'str', 'imported Types::Standard ok';
 
 eval {; $foo->array('foo') };

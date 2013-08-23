@@ -39,13 +39,11 @@ MoopsX::ListObjects - Use Moops with List::Objects::WithUtils
 Extends Toby Inkster's [Moops](http://search.cpan.org/perldoc?Moops) sugary class building syntax with
 [List::Objects::WithUtils](http://search.cpan.org/perldoc?List::Objects::WithUtils) objects.
 
-Importing [MoopsX::ListObjects](http://search.cpan.org/perldoc?MoopsX::ListObjects) is the same as importing [Moops](http://search.cpan.org/perldoc?Moops), but you
-also get `array`, `immarray`, and `hash` objects from
-[List::Objects::WithUtils](http://search.cpan.org/perldoc?List::Objects::WithUtils).
+Importing [MoopsX::ListObjects](http://search.cpan.org/perldoc?MoopsX::ListObjects) is the same as importing [Moops](http://search.cpan.org/perldoc?Moops), but with
+`array`, `immarray`, and `hash` objects from [List::Objects::WithUtils](http://search.cpan.org/perldoc?List::Objects::WithUtils).
 
-You also get an extra set of types with coercions:
-
-`ArrayObj`, `ImmutableArray`, and `ImmutableArrayObj` will coerce from
+You also get the types & coercions from [List::Objects::Types](http://search.cpan.org/perldoc?List::Objects::Types).
+`ArrayObj` and `ImmutableArray` will coerce from
 plain ARRAY-type references to the appropriate [List::Objects::WithUtils](http://search.cpan.org/perldoc?List::Objects::WithUtils)
 object; `HashObj` will do the same for HASH-type references.
 

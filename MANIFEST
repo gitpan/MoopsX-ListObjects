@@ -7,8 +7,8 @@ Makefile.PL
 README
 README.mkdn
 dist.ini
+examples/coerce.pl
 lib/MoopsX/ListObjects.pm
-lib/MoopsX/ListObjects/Types.pm
 t/00-report-prereqs.t
 t/listobjs.t
 t/release-cpan-changes.t

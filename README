@@ -36,15 +36,13 @@ DESCRIPTION
     Extends Toby Inkster's Moops sugary class building syntax with
     List::Objects::WithUtils objects.
 
-    Importing MoopsX::ListObjects is the same as importing Moops, but you
-    also get "array", "immarray", and "hash" objects from
-    List::Objects::WithUtils.
+    Importing MoopsX::ListObjects is the same as importing Moops, but with
+    "array", "immarray", and "hash" objects from List::Objects::WithUtils.
 
-    You also get an extra set of types with coercions:
-
-    "ArrayObj", "ImmutableArray", and "ImmutableArrayObj" will coerce from
-    plain ARRAY-type references to the appropriate List::Objects::WithUtils
-    object; "HashObj" will do the same for HASH-type references.
+    You also get the types & coercions from List::Objects::Types. "ArrayObj"
+    and "ImmutableArray" will coerce from plain ARRAY-type references to the
+    appropriate List::Objects::WithUtils object; "HashObj" will do the same
+    for HASH-type references.
 
 SEE ALSO
     Moops

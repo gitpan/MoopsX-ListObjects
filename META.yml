@@ -14,6 +14,7 @@ meta-spec:
   version: 1.4
 name: MoopsX-ListObjects
 requires:
+  List::Objects::Types: 0
   List::Objects::WithUtils: 1.009
   Moops: 0.017
   Type::Library: 0
@@ -22,4 +23,4 @@ requires:
   parent: 0
 resources:
   repository: git://github.com/avenj/moopsx-listobjects.git
-version: 0.001001
+version: 0.002000

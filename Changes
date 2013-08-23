@@ -1,5 +1,9 @@
 Revision history for Perl module MoopsX::ListObjects
 
+0.002000 2013-08-23
+
+  - MoopsX::ListObjects::Types moved to dist List::Objects::Types
+
 0.001001 2013-08-22
 
   - Initial release

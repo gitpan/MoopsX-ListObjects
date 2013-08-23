@@ -1,6 +1,6 @@
 package MoopsX::ListObjects;
 {
-  $MoopsX::ListObjects::VERSION = '0.001001';
+  $MoopsX::ListObjects::VERSION = '0.002000';
 }
 use strict; use warnings FATAL => 'all';
 
@@ -12,7 +12,7 @@ sub import {
     'List::Objects::WithUtils' => [
       qw/array immarray hash/,
     ],
-    'MoopsX::ListObjects::Types' => [ -all ],
+    'List::Objects::Types' => [ -all ],
   );
   goto \&Moops::import
 }
@@ -64,13 +64,11 @@ MoopsX::ListObjects - Use Moops with List::Objects::WithUtils
 Extends Toby Inkster's L<Moops> sugary class building syntax with
 L<List::Objects::WithUtils> objects.
 
-Importing L<MoopsX::ListObjects> is the same as importing L<Moops>, but you
-also get C<array>, C<immarray>, and C<hash> objects from
-L<List::Objects::WithUtils>.
+Importing L<MoopsX::ListObjects> is the same as importing L<Moops>, but with
+C<array>, C<immarray>, and C<hash> objects from L<List::Objects::WithUtils>.
 
-You also get an extra set of types with coercions:
-
-C<ArrayObj>, C<ImmutableArray>, and C<ImmutableArrayObj> will coerce from
+You also get the types & coercions from L<List::Objects::Types>.
+C<ArrayObj> and C<ImmutableArray> will coerce from
 plain ARRAY-type references to the appropriate L<List::Objects::WithUtils>
 object; C<HashObj> will do the same for HASH-type references.
 

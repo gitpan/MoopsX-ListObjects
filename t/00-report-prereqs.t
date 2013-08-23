@@ -11,6 +11,7 @@ use List::Util qw/max/;
 
 my @modules = qw(
   ExtUtils::MakeMaker
+  List::Objects::Types
   List::Objects::WithUtils
   Moops
   Test::More
