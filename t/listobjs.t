@@ -21,10 +21,6 @@ class My::Foo :rw {
     isa     => ImmutableArray,
     coerce  => 1,
   );
-  has immarray2 => (
-    default => sub { immarray },
-    isa     => ImmutableArrayObj,
-  );
 
   has string => (
     default => sub { 'str' },
@@ -49,9 +45,6 @@ ok $foo->array( [] ), 'ArrayObj constraint coerce ok';
 eval {; $foo->immarray('foo') };
 ok $@, 'ImmutableArray constraint dies ok';
 ok $foo->immarray( [] ), 'ImmutableArray constraint coerce ok';
-
-eval {; $foo->immarray2('foo') };
-ok $@, 'ImmutableArrayObj constraint dies ok';
 
 eval {; $foo->hash('foo') };
 ok $@, 'HashObj constraint dies ok';

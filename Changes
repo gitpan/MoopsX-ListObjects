@@ -1,5 +1,14 @@
 Revision history for Perl module MoopsX::ListObjects
 
+0.002002 2013-09-06
+
+  - ImmutableArrayObj is gone in latest List::Objects::Types
+    (Replaced with ImmutableArray)
+
+0.002001 2013-08-30
+
+  - Register with Type::Registry in ->import
+
 0.002000 2013-08-23
 
   - MoopsX::ListObjects::Types moved to dist List::Objects::Types

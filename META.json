@@ -4,7 +4,7 @@
       "Jon Portnoy <avenj@cobaltirc.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 4.300037, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -52,6 +52,6 @@
          "web" : "git://github.com/avenj/moopsx-listobjects"
       }
    },
-   "version" : "0.002000"
+   "version" : "0.002001"
 }
 

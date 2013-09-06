@@ -39,10 +39,7 @@ DESCRIPTION
     Importing MoopsX::ListObjects is the same as importing Moops, but with
     "array", "immarray", and "hash" objects from List::Objects::WithUtils.
 
-    You also get the types & coercions from List::Objects::Types. "ArrayObj"
-    and "ImmutableArray" will coerce from plain ARRAY-type references to the
-    appropriate List::Objects::WithUtils object; "HashObj" will do the same
-    for HASH-type references.
+    You also get the types & coercions from List::Objects::Types.
 
 SEE ALSO
     Moops
