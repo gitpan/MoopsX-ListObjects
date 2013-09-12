@@ -16,11 +16,11 @@ name: MoopsX-ListObjects
 requires:
   List::Objects::Types: 0
   List::Objects::WithUtils: 1.009
-  Moops: 0.017
+  Moops: 0.020
   Type::Library: 0
   Type::Utils: 0
   Types::Standard: 0
   parent: 0
 resources:
   repository: git://github.com/avenj/moopsx-listobjects.git
-version: 0.002001
+version: 0.002002

@@ -31,7 +31,7 @@
          "requires" : {
             "List::Objects::Types" : "0",
             "List::Objects::WithUtils" : "1.009",
-            "Moops" : "0.017",
+            "Moops" : "0.020",
             "Type::Library" : "0",
             "Type::Utils" : "0",
             "Types::Standard" : "0",
@@ -52,6 +52,6 @@
          "web" : "git://github.com/avenj/moopsx-listobjects"
       }
    },
-   "version" : "0.002001"
+   "version" : "0.002002"
 }
 

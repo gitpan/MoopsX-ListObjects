@@ -22,7 +22,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "List::Objects::Types" => 0,
     "List::Objects::WithUtils" => "1.009",
-    "Moops" => "0.017",
+    "Moops" => "0.020",
     "Type::Library" => 0,
     "Type::Utils" => 0,
     "Types::Standard" => 0,
@@ -31,7 +31,7 @@ my %WriteMakefileArgs = (
   "TEST_REQUIRES" => {
     "Test::More" => "0.88"
   },
-  "VERSION" => "0.002001",
+  "VERSION" => "0.002002",
   "test" => {
     "TESTS" => "t/*.t"
   }

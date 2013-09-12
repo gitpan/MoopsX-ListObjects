@@ -1,6 +1,6 @@
 package MoopsX::ListObjects;
 {
-  $MoopsX::ListObjects::VERSION = '0.002001';
+  $MoopsX::ListObjects::VERSION = '0.002002';
 }
 use strict; use warnings FATAL => 'all';
 
@@ -10,14 +10,18 @@ use List::Objects::Types ();
 use Type::Registry ();
 
 sub import {
-  push @{ $_[1] ||= [] }, (
-    'List::Objects::WithUtils' => [
-      qw/array immarray hash/,
-    ],
-    'List::Objects::Types' => [ -all ],
-  );
-  #my $pkg = caller;
-  #Type::Registry->for_class($pkg)->add_types('List::Objects::Types');
+  my ($class, %params) = @_;
+  push @{ $params{imports} },
+    'List::Objects::Types'     => [ -all ],
+    'List::Objects::WithUtils' => [ qw/
+      array immarray array_of
+      hash hash_of
+    / ],
+  ;
+
+  my $pkg = caller;
+  Type::Registry->for_class($pkg)->add_types('List::Objects::Types');
+  @_ = ( $class, %params );
   goto \&Moops::import
 }
 
