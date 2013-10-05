@@ -1,6 +1,6 @@
 package MoopsX::ListObjects;
 {
-  $MoopsX::ListObjects::VERSION = '0.002002';
+  $MoopsX::ListObjects::VERSION = '0.003001';
 }
 use strict; use warnings FATAL => 'all';
 
@@ -14,13 +14,20 @@ sub import {
   push @{ $params{imports} },
     'List::Objects::Types'     => [ -all ],
     'List::Objects::WithUtils' => [ qw/
-      array immarray array_of
-      hash hash_of
+      array immarray array_of immarray_of
+      hash hash_of immhash immhash_of
     / ],
   ;
 
   my $pkg = caller;
   Type::Registry->for_class($pkg)->add_types('List::Objects::Types');
+
+  for my $tname (List::Objects::Types->type_names) {
+    my $reg = Type::Registry->for_class($pkg);
+    $reg->add_type( List::Objects::Types->get_type($tname) )
+      unless $reg->simple_lookup($tname)
+  }
+
   @_ = ( $class, %params );
   goto \&Moops::import
 }
@@ -73,19 +80,20 @@ Extends Toby Inkster's L<Moops> sugary class building syntax with
 L<List::Objects::WithUtils> objects.
 
 Importing L<MoopsX::ListObjects> is the same as importing L<Moops>, but with
-C<array>, C<immarray>, and C<hash> objects from L<List::Objects::WithUtils>.
-
-You also get the types & coercions from L<List::Objects::Types>.
+all of the objects available from L<List::Objects::WithUtils>, as well as the
+types and coercions from L<List::Objects::Types>.
 
 =head1 SEE ALSO
 
 L<Moops>
 
+L<List::Objects::WithUtils>
+
+L<List::Objects::Types>
+
 L<List::Objects::WithUtils::Role::Array>
 
 L<List::Objects::WithUtils::Role::Hash>
-
-L<List::Objects::WithUtils::Array::Immutable>
 
 =head1 AUTHOR
 

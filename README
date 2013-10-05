@@ -37,18 +37,19 @@ DESCRIPTION
     List::Objects::WithUtils objects.
 
     Importing MoopsX::ListObjects is the same as importing Moops, but with
-    "array", "immarray", and "hash" objects from List::Objects::WithUtils.
-
-    You also get the types & coercions from List::Objects::Types.
+    all of the objects available from List::Objects::WithUtils, as well as
+    the types and coercions from List::Objects::Types.
 
 SEE ALSO
     Moops
 
+    List::Objects::WithUtils
+
+    List::Objects::Types
+
     List::Objects::WithUtils::Role::Array
 
     List::Objects::WithUtils::Role::Hash
-
-    List::Objects::WithUtils::Array::Immutable
 
 AUTHOR
     Jon Portnoy <avenj@cobaltirc.org>

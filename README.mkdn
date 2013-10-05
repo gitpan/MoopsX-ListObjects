@@ -40,19 +40,20 @@ Extends Toby Inkster's [Moops](http://search.cpan.org/perldoc?Moops) sugary clas
 [List::Objects::WithUtils](http://search.cpan.org/perldoc?List::Objects::WithUtils) objects.
 
 Importing [MoopsX::ListObjects](http://search.cpan.org/perldoc?MoopsX::ListObjects) is the same as importing [Moops](http://search.cpan.org/perldoc?Moops), but with
-`array`, `immarray`, and `hash` objects from [List::Objects::WithUtils](http://search.cpan.org/perldoc?List::Objects::WithUtils).
-
-You also get the types & coercions from [List::Objects::Types](http://search.cpan.org/perldoc?List::Objects::Types).
+all of the objects available from [List::Objects::WithUtils](http://search.cpan.org/perldoc?List::Objects::WithUtils), as well as the
+types and coercions from [List::Objects::Types](http://search.cpan.org/perldoc?List::Objects::Types).
 
 # SEE ALSO
 
 [Moops](http://search.cpan.org/perldoc?Moops)
 
+[List::Objects::WithUtils](http://search.cpan.org/perldoc?List::Objects::WithUtils)
+
+[List::Objects::Types](http://search.cpan.org/perldoc?List::Objects::Types)
+
 [List::Objects::WithUtils::Role::Array](http://search.cpan.org/perldoc?List::Objects::WithUtils::Role::Array)
 
 [List::Objects::WithUtils::Role::Hash](http://search.cpan.org/perldoc?List::Objects::WithUtils::Role::Hash)
-
-[List::Objects::WithUtils::Array::Immutable](http://search.cpan.org/perldoc?List::Objects::WithUtils::Array::Immutable)
 
 # AUTHOR
 
